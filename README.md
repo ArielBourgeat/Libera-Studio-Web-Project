@@ -112,6 +112,8 @@ Used primarily for products and interactive elements:
 
 └── Script.js
 
+```
+
 * index.html: The main landing page and primary visual experience.
 
 * about.html: The conceptual About page, intended to communicate the identity and philosophy behind LÍBERA STUDIO.
