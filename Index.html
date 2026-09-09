@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Líbera Studio</title>
+  <link rel="icon" type="image/jpg" href="Images/LiberaLogo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="transparent">
+  <a href="#" class="nav-logo" id="navLogo">LÍBERA</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="About.html">About</a></li>
+    <li><a href="#" id="navCenter">Libera Studio</a></li>
+    <li><a href="#interactivo">Interactivo</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <video id="hero-video" autoplay muted loop playsinline>
+    <source src="Images/STG_flash (2).mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-title">LÍBERA STUDIO</div>
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="shop-intro">— colección actual —</div>
+  <div class="cards-container" id="cardsContainer">
+
+    <div class="card" data-name="Camiseta Qué Suerte" data-price="$85.000" data-img="camiseta">
+      <div class="card-number">01 / 06</div>
+      <div class="card-img">
+        <img src="Images/camiseta.png" alt="Camiseta">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Camiseta Qué Suerte</div>
+        <div class="card-price">$85.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Buso Corazones" data-price="$120.000" data-img="buso">
+      <div class="card-number">02 / 06</div>
+      <div class="card-img">
+        <img src="Images/Buso.png" alt="Buso">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Buso Corazones</div>
+        <div class="card-price">$120.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Totebag Lila" data-price="$65.000" data-img="totebags">
+      <div class="card-number">03 / 06</div>
+      <div class="card-img">
+        <img src="Images/Totebags.png" alt="Totebags">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Totebag Colección</div>
+        <div class="card-price">$65.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Camiseta Manga Larga" data-price="$95.000" data-img="buso">
+      <div class="card-number">04 / 06</div>
+      <div class="card-img">
+        <img src="Images/Buso.png" alt="Buso 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Manga Larga Hearts</div>
+        <div class="card-price">$95.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Camiseta Suerte II" data-price="$80.000" data-img="camiseta">
+      <div class="card-number">05 / 06</div>
+      <div class="card-img">
+        <img src="Images/camiseta.png" alt="Camiseta 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Camiseta Suerte II</div>
+        <div class="card-price">$80.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Totebag Stone" data-price="$70.000" data-img="totebags">
+      <div class="card-number">06 / 06</div>
+      <div class="card-img">
+        <img src="Images/Totebags.png" alt="Totebag 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Totebag Stone</div>
+        <div class="card-price">$70.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Camiseta Manga Larga" data-price="$95.000" data-img="buso">
+      <div class="card-number">04 / 06</div>
+      <div class="card-img">
+        <img src="Images/Buso.png" alt="Buso 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Manga Larga Hearts</div>
+        <div class="card-price">$95.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Camiseta Suerte II" data-price="$80.000" data-img="camiseta">
+      <div class="card-number">05 / 06</div>
+      <div class="card-img">
+        <img src="Images/camiseta.png" alt="Camiseta 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Camiseta Suerte II</div>
+        <div class="card-price">$80.000</div>
+      </div>
+    </div>
+
+    <div class="card" data-name="Totebag Stone" data-price="$70.000" data-img="totebags">
+      <div class="card-number">06 / 06</div>
+      <div class="card-img">
+        <img src="Images/Totebags.png" alt="Totebag 2">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Totebag Stone</div>
+        <div class="card-price">$70.000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SHOP -->
+<section id="cta-shop">
+  <video id="cta-video" autoplay muted loop playsinline>
+    <source src="Images/El BTS de las fotos de las camisetas Suerte, Perro y Corazón. Disponibles vía DM.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <p class="cta-tagline">no es fast fashion, es proceso</p>
+  <a href="Shop.html" class="cta-btn">SHOP</a>
+</section>
+
+<!-- INTERACTIVE -->
+<section id="interactivo">
+  <div class="interactive-bg-text">
+    <span class="bg-line">FEEL FREE</span>
+    <span class="bg-line">USE FREEDOM</span>
+    <span class="bg-line accent">USE LÍBERA</span>
+  </div>
+
+  <div class="stickers-area">
+    <div class="sticker" id="s-buso" style="width:220px;top:10%;left:5%;transform:rotate(-6deg)"
+      onclick="openPopup('Buso Corazones','$120.000','buso')">
+      <img src="Images/Buso.png" alt="Buso">
+    </div>
+    <div class="sticker" id="s-camiseta" style="width:180px;top:30%;right:8%;transform:rotate(4deg)"
+      onclick="openPopup('Camiseta Qué Suerte','$85.000','camiseta')">
+      <img src="Images/camiseta.png" alt="Camiseta">
+    </div>
+    <div class="sticker" id="s-totebag" style="width:200px;bottom:12%;left:35%;transform:rotate(-3deg)"
+      onclick="openPopup('Totebag Colección','$65.000','totebags')">
+      <img src="Images/Totebags.png" alt="Totebag">
+    </div>
+  </div>
+</section>
+
+<!-- POPUP -->
+<div class="popup-overlay" id="popupOverlay" onclick="closePopup(event)">
+  <div class="popup" id="popup">
+    <button class="popup-close" onclick="closePopupDirect()">✕ cerrar</button>
+    <div class="popup-img"><img id="popupImg" src="" alt=""></div>
+    <div class="popup-name" id="popupName"></div>
+    <div class="popup-price" id="popupPrice"></div>
+    <a href="https://ig.me/m/libera.studio/" class="popup-btn" onclick="closePopupDirect()">Comprar</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-links">
+    <div class="footer-col">
+      <a href="https://www.instagram.com/libera.studio/">Instagram</a>
+      <a href="">Tiktok</a>
+      <a href="https://www.instagram.com/paradiso.handpoke/">paradiso.handpoke</a>
+    </div>
+    <div class="footer-col">
+      <a href="About.html">About</a>
+      <a href="Shop.html">Shop</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-col">
+      <a href="#">Terminos &</a>
+      <a href="#">Condiciones</a>
+    </div>
+    <div class="footer-col" style="align-items:flex-end">
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <img src="Images/stg_danger.png" alt="STG Danger" class="footer-danger-img">
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-text">LÍBERA © STUDIO.</div>
+    <div class="footer-arrow">→</div>
+  </div>
+</footer>
+
+<script src="Script.js" defer></script>
+
+</body>
+</html>

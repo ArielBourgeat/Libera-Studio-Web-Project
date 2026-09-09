@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Líbera Studio</title>
+  <link rel="icon" type="image/jpg" href="Images/LiberaLogo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body class="page-light">
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="solid">
+    <a href="Index.html" class="nav-logo" id="navLogo">LÍBERA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="About.html">About</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="Index.html#interactivo">Interactivo</a></li>
+      <li><a href="Index.html#footer">Social</a></li>
+    </ul>
+  </nav>
+
+  <main class="shop-page">
+    <!-- Landing editorial (sticky) -->
+    <section class="shop-landing" id="shop-landing">
+      <div class="shop-landing-sticky">
+        <div class="shop-landing-grid">
+          <div class="shop-landing-left">
+            <h1 class="shop-landing-title">SHOP</h1>
+            <p class="shop-landing-copy">
+              Nuestra filosofía no se basa en tendencias efímeras ni en el murmullo pasajero de la moda rápida: se fundamenta en la búsqueda de la armonía absoluta entre la prenda y quien la habita.
+              Creemos firmemente que la verdadera elegancia reside en la precisión: esa caída exacta que parece esculpida sobre el cuerpo, asegurando que cada pieza te quede bien desde el primer instante.
+              Entendemos el diseño como una experiencia sensorial. No basta con vestir el exterior; nuestro propósito es el bienestar interno.
+              Seleccionamos texturas y siluetas diseñadas para que te sientas bien, otorgando esa seguridad silenciosa que solo nace de la comodidad auténtica.
+              Es una invitación a reconciliarse con el espejo, a través de materiales que respetan tu piel y tu movimiento.
+              Finalmente, apostamos por la trascendencia. En un mundo que se consume a gran velocidad, nuestras piezas están creadas para que perduren en el tiempo.
+              Un diseño que desafía el paso del tiempo, manteniendo su integridad y su esencia, para que, sin importar la temporada o el año, siempre logre que te veas bien.
+              Es, en esencia, la promesa de una estética impecable que te acompaña para siempre.
+            </p>
+            <br><br>
+            <p>SCROLL DOWN TO SEE OUR PRODUCTS. ↓</p>
+          </div>
+
+
+          <div class="shop-landing-right">
+            <div class="shop-landing-images">
+              <img src="Images/LiberaBusoEspalda.jpg" alt="Editorial 1">
+              <img src="Images/LiberaCorazon.jpg" alt="Editorial 2">
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-landing-scroll">
+          <div class="shop-landing-scroll-label">SCROLL</div>
+          <div class="shop-landing-scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogo (se sobrepone) -->
+    <section class="shop-catalog" id="shop-catalog">
+      <div class="shop-catalog-inner">
+        <aside class="shop-menu" data-shop-filter-menu>
+          <button class="shop-menu-item active" data-filter="all" type="button">ALL.</button>
+          <button class="shop-menu-item" data-filter="shirts" type="button">SHIRTS.</button>
+          <button class="shop-menu-item" data-filter="accesories" type="button">ACCESORIES.</button>
+          <button class="shop-menu-item" data-filter="hats" type="button">HATS.</button>
+          <button class="shop-menu-item" data-filter="totebags" type="button">TOTEBAGS.</button>
+        </aside>
+
+        <section class="shop-grid" data-shop-grid aria-label="Productos">
+          <article class="shop-item" data-category="shirts">
+            <div class="shop-item-img"><img src="Images/camiseta.png" alt="Item 01"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="shirts">
+            <div class="shop-item-img"><img src="Images/camiseta.png" alt="Item 02"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="accesories">
+            <div class="shop-item-img"><img src="Images/Totebags.png" alt="Item 03"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="hats">
+            <div class="shop-item-img"><img src="Images/Buso.png" alt="Item 04"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="hats">
+            <div class="shop-item-img"><img src="Images/Buso.png" alt="Item 04"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="totebags">
+            <div class="shop-item-img"><img src="Images/Totebags.png" alt="Item 04"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          <article class="shop-item" data-category="totebags">
+            <div class="shop-item-img"><img src="Images/Totebags.png" alt="Item 01"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+          
+          <article class="shop-item" data-category="totebags">
+            <div class="shop-item-img"><img src="Images/Totebags.png" alt="Item 01"></div>
+            <div class="shop-item-title">Item #.</div>
+            <div class="shop-item-desc">Description.</div>
+            <div class="shop-item-price">$30.00</div>
+          </article>
+
+          
+
+          
+          
+
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same as Index.html) -->
+  <footer id="footer">
+    <div class="footer-links">
+      <div class="footer-col">
+        <a href="https://www.instagram.com/libera.studio/">Instagram</a>
+        <a href="#">Tiktok</a>
+        <a href="https://www.instagram.com/paradiso.handpoke/">paradiso.handpoke</a>
+      </div>
+      <div class="footer-col">
+        <a href="About.html">About</a>
+        <a href="Shop.html">Shop</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <a href="#">Terminos &</a>
+        <a href="#">Condiciones</a>
+      </div>
+      <div class="footer-col" style="align-items:flex-end">
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <img src="Images/stg_danger.png" alt="STG Danger" class="footer-danger-img">
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-text">LÍBERA © STUDIO.</div>
+      <div class="footer-arrow">→</div>
+    </div>
+  </footer>
+
+  <script src="Script.js" defer></script>
+</body>
+</html>
