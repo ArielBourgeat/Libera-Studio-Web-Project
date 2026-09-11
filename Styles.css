@@ -864,7 +864,7 @@
     position: relative;
     min-height: 420px;
   }
-  
+
   /* “líneas que no se topan”: separadores con margen interno */
   .shop-item::before,
   .shop-item::after {
@@ -934,3 +934,120 @@
     .shop-item:nth-child(-n+2)::before { display: none; }
     .shop-item:nth-child(1)::before { display: none; }
   }
+
+ /* ----- PRIVACY PAGE ----- */
+
+.privacy-page {
+  padding-top: 90px;
+  background: var(--white);
+  color: var(--black);
+  min-height: auto;
+}
+
+.privacy-landing {
+  padding-top: 5px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  background: var(--white);
+}
+
+.privacy-landing-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  padding: 60px;
+  align-items: start;
+}
+
+.privacy-landing-left {
+  min-width: 0;
+}
+
+.privacy-landing-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.6rem, 8vw, 6rem);
+  letter-spacing: 0.08em;
+  line-height: 0.95;
+  margin-bottom: 22px;
+}
+
+.privacy-landing-copy {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
+  max-width: 62ch;
+}
+
+.privacy-landing-left h3 {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 40px 0 15px;
+}
+
+.privacy-landing-images {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.privacy-landing-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  filter: brightness(0.72) contrast(1.05) grayscale(15%);
+}
+
+@media (max-width: 900px) {
+
+  .privacy-page {
+      padding-top: 80px;
+  }
+
+  .privacy-landing {
+      padding-bottom: 80px;
+      min-height: auto;
+      height: auto;
+  }
+
+  .privacy-landing-grid {
+      grid-template-columns: 1fr;
+      padding: 40px 30px;
+      gap: 50px;
+  }
+
+  .privacy-landing-title {
+      font-size: clamp(2.8rem, 12vw, 5rem);
+  }
+
+  .privacy-landing-copy {
+      font-size: 0.68rem;
+      line-height: 1.7;
+      max-width: none;
+  }
+
+  .privacy-landing-images {
+      grid-template-rows: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+  }
+
+  .privacy-landing-images img {
+      aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-landing-grid { padding: 30px 20px; gap: 40px;}
+  .privacy-landing-title {font-size: clamp(2.5rem, 15vw, 4rem);}
+  .privacy-landing-images {grid-template-columns: 1fr;}
+  .privacy-landing-images img {aspect-ratio: 4 / 3; }
+}
